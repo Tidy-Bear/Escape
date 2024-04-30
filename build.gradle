@@ -178,8 +178,8 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, "mixins.${project.mod_id}.refmap.json"
-    config "mixins.${project.mod_id}.json"
+    //add sourceSets.main, "mixins.${project.mod_id}.refmap.json"
+    //config "mixins.${project.mod_id}.json"
 
     debug.verbose = true
     debug.export = true
@@ -227,8 +227,8 @@ tasks.named('jar', Jar).configure {
                 "Implementation-Title": project.name,
                 "Implementation-Version": project.jar.archiveVersion,
                 "Implementation-Vendor" : author_name,
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                "MixinConfigs": "mixins.${project.mod_id}.json"
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                //"MixinConfigs": "mixins.${project.mod_id}.json"
         ])
     }
 

@@ -1,27 +1,9 @@
-# CTidy's Forge Demo (Forge Mod Dev Template)
+# Escape
 
-CTidy's own Forge mod development template. Implementers should change `mod_id`, `version`, `author`, `licence`, etc., to actual values.
+Escape the mandatory requirement of logically client only mods on the server. We players are free to install permitted mods!!!
 
-## Built-ins
-### Env
-- MinecraftForge
-- SpongePowered Mixin
-- ParchmentMC Mappings
+## Reason
+It's quite common that some mods is imcompatible with each other, such as Emojiful and Modern UI. I prefer modernui much more. Considering emojiful SHOULD BE a client only mod (and it marks as such in the 'mods.toml' file of Forge), I disabled it, but then was refused to join the server because of its new registry entry (recipe type) of recipe for custom emoji. Fine, so I developed this mod, after all, I REALLY CANT DO WITHOUT modernui :(
 
-### Mod dependencies
-Allowed to add / remove freely.
-- JEI (JustEnoughItems)
-- JECh (JustEnoughCharacters)
-- Jade
-- Catalogue
-- Configured
-- Controlling
-- Spark
-- Xaero's Minimap
-- Xaero's World Map
-
-All `.jar` files in the `<project_root>/libs` dir will be imported and de-obfuscated automatically, except those with a suffix `-sources.jar` or `-local.jar`.
-
-## Notes
-It's recommended to separate codes of mod itself (such as api), codes depending on Vanilla MC and codes depending on a specific platform (such as Forge, Fabric, etc.), though the template is only for Forge.
-When implementing a certain use case, use codes from Vanilla MC instead of platform-specific APIs, unless there are striking defects on Vanilla, or you are ready to coding on each platform.
+## Plan
+I may add patches for more mods in similar situations in the future.

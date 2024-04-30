@@ -1,27 +1,9 @@
-# CTidy's Forge Demo （Forge Mod 开发模板）
+# 规避（Escape）
 
-CTidy（熊老师）自己的 Forge Mod 开发模板。具体开发时，请将 `mod_id`、`version`、`author`、`licence` 等内容修改为实际值。
+规避那些 安装在服务器上、怎么想都该是仅客户端 的 mods 对客户端安装的强制要求。玩家理应自由地安装所允许的 mods！！！
 
-## 预置组件
-### 开发环境
-- MinecraftForge
-- SpongePowered Mixin
-- ParchmentMC Mappings
+## 原因
+有些 mods 互不兼容再常见不过了，比如 Emojiful 和 Modern UI。我个人更喜欢 Modern UI。想想 Emojiful 应该是个 仅客户端 mod（它在 forge 的 'mods.toml' 也是如此标注的），于是我禁用了这个 mod，然后加不进服务器了... 因为 Emojiful 添加了新的注册项（配方类型）来自定义 emoji。好吧，我就这么开发了这个 mod，毕竟我真的离不开 Modern UI :(
 
-### Mod 依赖
-可以按需要自由增删。
-- JEI (JustEnoughItems)
-- JECh (JustEnoughCharacters)
-- Jade
-- Catalogue
-- Configured
-- Controlling
-- Spark
-- Xaero's Minimap
-- Xaero's World Map
-
-项目会自动导入 `<project_root>/libs` 目录下的所有 `.jar` 文件，并进行反混淆，除非这些 jar 包的文件名具有 `-sources.jar` 或者 `-local.jar` 后缀。
-
-## 备注
-推荐将 Mod 本身的代码（如 api）、依赖于原版 MC 的代码 以及 依赖于指定平台（如 Forge、Fabric 等）的代码相分离，即便本模板是 Forge 专供。
-当实现某个功能用例时，尽量优先使用原版 MC 的代码，再考虑指定平台的 API，除非原版代码具有过于显著的缺陷，或者你准备好在每个平台上都进行一次实现。
+## 计划
+未来假如还有类似情形，我会视情况继续添加更多支持的。
